@@ -1,0 +1,54 @@
+<html>
+<style>
+input[type=text], select{
+width :40%;
+padding:10px 10px;
+margin: 8px 0;
+display: inline-block;
+border: 1px red;
+border-radius:10px;
+box-sizing: border-box;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+background-color:#45a049;
+}
+div{
+border-radius: 5px;
+background-color:pink;
+padding: 20px;
+}
+</style>
+<body>
+<div>
+<form>
+<form action="server_name.php">
+First name:<br>
+<input type="text" name="firstname"><br>
+ last name:<br>
+<input type="text" name="lastname"><br>
+Gender <br>
+<input type="radio" name="gender" value="male" checked> male<br>
+<input type="radio" name="gender" value="female"> female<br>
+<input type="radio" name="gender" value="trans"> trans<br>
+Age:<br>
+<input type="number" name="age"><br>
+<label for="country">country</lable><br>
+<select id="country" name="country">
+<option value="INDIA">INDIA</lable>
+ <option value="America">America</lable>
+<option value="Europe">Europe</lable><br>
+Subject<br>
+<input type="text" name="Subject"><br>
+<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px""width:200px"></textarea><br>
+<input type="submit" value="Submit">
+</div>
+</body>
+</html>
